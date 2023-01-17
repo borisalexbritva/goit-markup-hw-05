@@ -137,6 +137,7 @@ text-decoration: none;
 text-transform:uppercase;
 
 }
+
 /* Button stud */
 .buttron{
     list-style-type: none;
@@ -158,9 +159,12 @@ text-transform:uppercase;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+   
+} 
+
 .current {
     position: relative;
+    
 }
 
 
@@ -184,6 +188,7 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--navcolor);
 text-decoration: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .studios:hover{
     color:var(--contactcolor);
@@ -194,6 +199,7 @@ text-decoration: none;
 .studios:active{
     color:  var(--clickcolor)
 }
+
     
 
 
@@ -553,6 +559,7 @@ letter-spacing: 0.02em;
 
 .socialf{
     margin-top: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .socialfs:hover{
     background-color: #404BBF;
@@ -592,7 +599,7 @@ letter-spacing: 0.02em;
     width: 166px;
     height: 88px;
     fill: #8e8f99;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -703,7 +710,7 @@ padding-top: 16px;
     height: 40px;
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -760,7 +767,7 @@ padding-top: 16px;
     padding: 12px 24px;
     cursor: pointer;
     display: inline-block;
-    
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all:hover{
     background:  var(--butcolor);
@@ -826,6 +833,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    
 }
 
 .buttrons li {
@@ -861,15 +869,20 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
    
 
 }
-.product-overlay {
+.absolute{
     position: absolute;
+}
+
+.product-overlay {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100% ;
     background-color: var(--butcolor);
 
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .product-text {
     position: absolute;
     width: 296px;
